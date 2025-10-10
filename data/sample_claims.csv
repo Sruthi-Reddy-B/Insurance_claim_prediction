@@ -1,0 +1,6 @@
+Age,Vehicle_Age,Vehicle_Damage,Policy_Sales_Channel,Vintage,Previously_Claimed,Claim_Approved
+25,2,Yes,152,150,0,1
+45,5,No,26,300,1,0
+30,1,Yes,152,200,0,1
+50,3,No,152,100,1,0
+35,2,Yes,26,250,0,1
