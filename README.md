@@ -58,13 +58,22 @@ jupyter notebook notebooks/eda_model_training.ipynb
 
 # Run Flask demo
 python app/app.py
-Open http://127.0.0.1:5000 in your browser.
 ```
+Open http://127.0.0.1:5000 in your browser.
+
 ---
 
 ##  Results
-Accuracy: ~100% on the demo dataset (small, balanced sample)
+Dataset: 100-row realistic demo dataset
+Test set size: 43 rows (40% of total)
+Accuracy: 88%
 Confusion Matrix: Saved in results/confusion_matrix.png
+```
+| Class | Precision | Recall | F1-score | Support |
+| ----- | --------- | ------ | -------- | ------- |
+| 0     | 0.83      | 0.88   | 0.86     | 17      |
+| 1     | 0.92      | 0.88   | 0.90     | 26      |
+```
 
 Note: Metrics are for demonstration purposes. Real-world performance depends on dataset size and quality.
 
