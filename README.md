@@ -1,31 +1,77 @@
 # Insurance Claim Prediction — End-to-End ML Pipeline
 
-## Overview
-Predicts whether an insurance claim will be approved using Random Forest. Includes data preprocessing, model training, evaluation, and a simple Flask web app for demo.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Sruthi-Reddy-B/Insurance_claim_prediction/blob/main/notebooks/eda_model_training.ipynb)
 
-## Tech Stack
-Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Flask, Joblib
+##  Project Overview
+Predicts whether an insurance claim will be approved using **Random Forest**.  
+This end-to-end pipeline includes: data preprocessing, model training, evaluation, and a **simple Flask web app demo**.
 
-## Folder Structure
-- `data/` — sample CSV data
-- `notebooks/` — EDA & model training
-- `src/` — saved model
-- `app/` — Flask app
-- `results/` — evaluation plots
-- `requirements.txt` — dependencies
+---
 
-## How to Run
-1. Install dependencies:
-  pip install -r requirements.txt
-2. Run the notebook for EDA and training (`notebooks/eda_model_training.ipynb`)
-3. Run the Flask app for demo:
-  python app/app.py
+##  Tech Stack
+- **Python Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Joblib  
+- **Web App:** Flask  
+- **Environment:** Google Colab (GPU optional)
 
-Open `http://127.0.0.1:5000` in your browser.
+---
+
+##  Dataset
+- **Demo dataset:** `data/sample_claims.csv` (30 rows, balanced)  
+- **Features:** Age, Vehicle Age, Vehicle Damage, Policy Sales Channel, Vintage, Previously Claimed  
+- **Target:** Claim_Approved (0 = Not Approved, 1 = Approved)
+
+---
+
+##  Folder Structure
+insurance-claim-prediction/
+├── data/ # Sample CSV dataset
+├── notebooks/ # EDA & model training
+├── src/ # Saved model
+├── app/ # Flask demo app
+├── results/ # Evaluation plots
+├── requirements.txt
+└── README.md
+
+
+---
+
+##  How to Run
+
+### 1️. Using Google Colab (Recommended)
+1. Click the **Colab badge** at the top.  
+2. Run all notebook cells sequentially.  
+3. The model will train, evaluate, and generate plots in `results/`.
+
+### 2️. Locally
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the notebook for training
+jupyter notebook notebooks/eda_model_training.ipynb
+
+# Run Flask demo
+python app/app.py
+Open http://127.0.0.1:5000 in your browser.
+
+---
 
 ## Results
-- Accuracy on sample data: ~100% (small dataset)
-- Confusion matrix plot included in `results/`
+Accuracy: ~100% on the demo dataset (small, balanced sample)
+Confusion Matrix: Saved in results/confusion_matrix.png
+
+Note: Metrics are for demonstration purposes. Real-world performance depends on dataset size and quality.
+
+---
+
+## Next Steps / Enhancements
+
+- Increase dataset size for real-world use.
+- Experiment with other ML models (Logistic Regression, XGBoost).
+- Add interactive Colab demo for user inputs.
+- Improve Flask UI for a more polished presentation.
+
+---
 
 ## License
 MIT
