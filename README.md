@@ -23,15 +23,21 @@ This end-to-end pipeline includes: data preprocessing, model training, evaluatio
 ---
 
 ##  Folder Structure
+'''
 insurance-claim-prediction/
-├── data/ # Sample CSV dataset
+├── data/ # CSV dataset
+│ └── sample_claims.csv
 ├── notebooks/ # EDA & model training
+│ └── eda_model_training.ipynb
 ├── src/ # Saved model
-├── app/ # Flask demo app
+│ └── claim_model.pkl
 ├── results/ # Evaluation plots
-├── requirements.txt
+│ └── confusion_matrix.png
+├── app/ # Flask demo
+│ └── app.py
+├── requirements.txt # Dependencies
 └── README.md
-
+'''
 
 ---
 
@@ -56,7 +62,7 @@ Open http://127.0.0.1:5000 in your browser.
 
 ---
 
-## Results
+##  Results
 Accuracy: ~100% on the demo dataset (small, balanced sample)
 Confusion Matrix: Saved in results/confusion_matrix.png
 
@@ -64,7 +70,7 @@ Note: Metrics are for demonstration purposes. Real-world performance depends on 
 
 ---
 
-## Next Steps / Enhancements
+##  Next Steps / Enhancements
 
 - Increase dataset size for real-world use.
 - Experiment with other ML models (Logistic Regression, XGBoost).
