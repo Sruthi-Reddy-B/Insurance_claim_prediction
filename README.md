@@ -26,7 +26,7 @@ This end-to-end pipeline includes: data preprocessing, model training, evaluatio
 ```
 insurance-claim-prediction/
 ├── data/ # CSV dataset
-│ └── sample_claims.csv
+│ └── sample_claims_-realistic.csv
 ├── notebooks/ # EDA & model training
 │ └── eda_model_training.ipynb
 ├── src/ # Saved model
