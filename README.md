@@ -23,7 +23,7 @@ This end-to-end pipeline includes: data preprocessing, model training, evaluatio
 ---
 
 ##  Folder Structure
-'''
+```
 insurance-claim-prediction/
 ├── data/ # CSV dataset
 │ └── sample_claims.csv
@@ -37,7 +37,7 @@ insurance-claim-prediction/
 │ └── app.py
 ├── requirements.txt # Dependencies
 └── README.md
-'''
+```
 
 ---
 
@@ -59,7 +59,7 @@ jupyter notebook notebooks/eda_model_training.ipynb
 # Run Flask demo
 python app/app.py
 Open http://127.0.0.1:5000 in your browser.
-
+```
 ---
 
 ##  Results
